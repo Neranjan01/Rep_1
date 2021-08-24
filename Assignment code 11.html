@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script>
+            function formHandle(){
+                var url= document.myform.newsite.newsite.options[document.myform.newsite.selectedINdex].value;
+                window.location.href=url;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myform">
+            <select id="newsite" size="1" onchange="formHandle()">
+                <option value="">Hi there</option>
+                <option value="http://www.google.com">Google</option>
+                <option value="http://www.nsbm.ac.lk">NSBM website</option>
+                <option value="https://www.epicgames.com">Games</option>
+            </select>
+        </form>
+    </body>
+</html>
